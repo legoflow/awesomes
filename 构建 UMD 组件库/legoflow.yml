@@ -1,0 +1,31 @@
+# 参数说明: https://legoflow.com/wiki/config.html
+
+name: lf-build-umd
+
+version: cli@2.0.0-beta.27
+
+type: test
+
+REM: false
+
+ES.Next: true
+
+ESLint: false
+
+alias:
+  '@': ./src
+
+mode: webpack
+
+includeModules:
+  - ./node_modules
+
+workflow.dev:
+  hot.reload: true
+
+workflow.build:
+  bundle.limitResourcesSize: 5
+  shell: ./shell/build.js
+
+entry:
+  - ./src/test.js
