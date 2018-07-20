@@ -1,0 +1,13 @@
+.square {
+  margin-top: 0;
+  margin-left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: all .2s ease;
+}
+
+.square-move {
+  margin-top: 100px;
+  margin-left: 100px;
+}

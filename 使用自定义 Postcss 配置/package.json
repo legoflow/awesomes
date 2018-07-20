@@ -1,0 +1,10 @@
+{
+  "name": "lf-awesomes-build-md",
+  "version": "0.0.1",
+  "author": "lijialiang@yy.com",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "postcss-preset-env": "^5.2.2"
+  }
+}

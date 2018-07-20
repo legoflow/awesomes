@@ -1,8 +1,8 @@
 # 参数说明: https://legoflow.com/wiki/config.html
 
-name: lf-awesomes-build-umd
+name: lf-awesomes-build-md
 
-version: cli@2.0.0-beta.27
+version: cli@2.0.0-beta.28
 
 type: test
 
@@ -24,8 +24,8 @@ workflow.dev:
   hot.reload: true
 
 workflow.build:
+  cache: hash
   bundle.limitResourcesSize: 5
-  shell: ./shell/build.js
 
 entry:
-  - ./src/test.js
+  - ./src/main.js
